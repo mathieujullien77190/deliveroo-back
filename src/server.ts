@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/data", (req, res) => {
+  logInfo("Data sent to client");
   return res.json(data);
 });
 
